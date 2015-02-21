@@ -1,1 +1,13 @@
 
+Information about the variables (including units!) in the data set not contained in the tidy data
+    Information about the summary choices you made
+    Information about the experimental study design you used
+
+This dataset provides  average and standard deviation of each activity when grouped by activity and each subject. The dataset has 180 row and 81 columns.  It has the following variables:
+
+ActivityNames -- activity done by subject
+subject -- Subject that performed the activity
+tBodyAcc.mean.X -  The acceleration signal from the smartphone accelerometer X axis in standard 
+                    gravity units 'g'. Every row shows a 128 element vector. The same description 
+                    applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
