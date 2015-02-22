@@ -41,21 +41,26 @@ dim(alldataA )
 rownames(alldataA )
 
 ###### STEP 3: Indentify the measurements that correspond to the mean and standard deviation, 
-######		and extract them from working dataset to create a new working dataset
+######		and extract them from working dataset to create a new working dataset.  
+
+### Note: It was not clear if we should select those variables with mean in an earlier part of the name as well. 
+### To be safe, those were included since its easier to remove variables than add variables after the
+### dataset is obtained.
 
 ### look for cases where "mean" appears 
 mean.index <- grep("mean", colnames(alldataA))
 
 ### look for cases where "std" appears 
-sd.index <- grep("std", colnames(alldataA))
+sd.index <- grep("std", colnames(alldataA)) 
  
 ### set up a dataframe with only the mean and std measurements
 mean.std.measA <- alldataA[, c(mean.index, sd.index)]
 names(mean.std.measA )
 
-###### STEP 4: Add the "labels" to the dataset and read in the activity_labels, and start using the dplyr library to add the "labels" variables.
+###### STEP 4: Add the "labels" to the dataset and read in the activity_labels, and start using the dplyr 
+######	       library to add the "labels" variables.
 
-###  use dplyr to better handel the data
+###  use dplyr to better handle the data
 library(dplyr) 
 mean.std.measB<- tbl_df(mean.std.measA)
 
@@ -75,7 +80,6 @@ names(actlabels) <- c("LabelID", "LabelName")
 ###  create an empty list to hold the type of activity name, where
 ###  each list element corresponds to the type of activity
 act.index.list <- NULL
-
 
 ###  loop through the activity names
 for(j in 1:6){ 
