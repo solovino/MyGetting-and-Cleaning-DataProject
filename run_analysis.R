@@ -153,5 +153,7 @@ mymean <- function(x){ #to handel missing values
 # final dataset!
 mean.std.measH <- summarise_each(databy.act.sub, funs(mymean))
 
+# give the dataset a clearer name
+tidy.mean.std <- mean.std.measH
 
 
