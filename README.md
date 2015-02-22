@@ -15,4 +15,4 @@ This is the repository for my course project in the Getting and Cleaning Data co
       -- Creates a second, independent tidy data set with the average of each variable for each
          activity and each subject.
 
-2. Codebook       -- The codebook for the dataset
+2. Codebook.txt       -- The codebook for the dataset
