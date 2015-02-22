@@ -14,7 +14,7 @@ File 1. run_analysis.R  -- A R file that contains code with comments that does t
       
       -- Creates a second, independent tidy data set with the average of each variable for each
          activity and each subject.
-
+         
 In summary, the file does the following steps (with various lines of code and comments under each step):
 
 STEP 1: Read in the test and training data and labels
@@ -38,6 +38,9 @@ STEP 7: Clean up the column names
 STEP 8: group data by activity name, then subject
 
 STEP 9: Define the final dataset that computes the average of each variable for each activity and each subject
+
+The tidy dataset is a data.frame object named tidy.mean.std.
+
 
 File 2.  Codebook.txt       -- The codebook for the dataset
 
