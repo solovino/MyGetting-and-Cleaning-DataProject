@@ -8,49 +8,67 @@ The dataset has 180 row and 81 columns.  It has the following variables:
 
 ActivityNames -- activity done by subject
 subject -- Subject that performed the activity
-tBodyAcc.mean.X     -Mean time body acceleration signal from the smartphone accelerometer X axis in standard 
-                    gravity units 'g'.  The same description applies for the tBodyAcc.mean.Y and 
-                    tBodyAcc.mean.Z for the Y and Z axis. 
+tBodyAcc.mean.X         -Mean time body acceleration signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the tBodyAcc.mean.Y and 
+                        tBodyAcc.mean.Z for the Y and Z axis. 
 
-tGravityAcc.mean.X -Mean time gravity acceleration signal from the smartphone accelerometer X axis in standard 
-                    gravity units 'g'.  The same description applies for the tGravityAcc.mean.Y and 
-                    tGravityAcc.mean.Z for the Y and Z axis. 
+tGravityAcc.mean.X      -Mean time gravity acceleration signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the tGravityAcc.mean.Y and 
+                        tGravityAcc.mean.Z for the Y and Z axis. 
 
-tBodyAccJerk.mean.X -Mean time body acceleration jerk signal from the smartphone accelerometer X axis in standard 
-                    gravity units 'g'.  The same description applies for the tBodyAccJerk.mean.Y and 
-                    tBodyAccJerk.mean.Z for the Y and Z axis.  
+tBodyAccJerk.mean.X     -Mean time body acceleration jerk signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the tBodyAccJerk.mean.Y and 
+                        tBodyAccJerk.mean.Z for the Y and Z axis.  
 
-tBodyGyro.mean.X    -Mean time body angular signal from the smartphone gyroscope X axis in standard 
-                    gravity units 'g'.  The same description applies for the tBodyGyro.mean.Y and 
-                    tBodyGyro.mean.Z for the Y and Z axis. 
+tBodyGyro.mean.X        -Mean time body angular signal from the smartphone gyroscope X axis in standard 
+                        gravity units 'g'.  The same description applies for the tBodyGyro.mean.Y and 
+                        tBodyGyro.mean.Z for the Y and Z axis. 
 
-tBodyGyroJerk.mean.X -Mean time body angular jerk signal from the smartphone gyroscope X axis in standard 
-                    gravity units 'g'.  The same description applies for the tBodyGyroJerk.mean.Y and 
-                    tBodyGyroJerk.mean.Z for the Y and Z axis. 
+tBodyGyroJerk.mean.X    -Mean time body angular jerk signal from the smartphone gyroscope X axis in standard 
+                        gravity units 'g'.  The same description applies for the tBodyGyroJerk.mean.Y and 
+                        tBodyGyroJerk.mean.Z for the Y and Z axis. 
 
-tBodyAccMag.mean    -Mean time body acceleration magnitude signal from the smartphone  accelerometer.
+tBodyAccMag.mean        -Mean time body acceleration magnitude signal from the smartphone  accelerometer.
 
-tGravityAccMag.mean -Mean time gravity acceleration magnitude signal from the smartphone  accelerometer.
+tGravityAccMag.mean     -Mean time gravity acceleration magnitude signal from the smartphone  accelerometer.
 
-tBodyAccJerkMag.mean -Mean time body acceleration jerk magnitude signal from the smartphone  accelerometer.
+tBodyAccJerkMag.mean    -Mean time body acceleration jerk magnitude signal from the smartphone  accelerometer.
 
-tBodyGyroMag.mean   -Mean time body angular  magnitude signal from the smartphone  accelerometer.
+tBodyGyroMag.mean       -Mean time body angular  magnitude signal from the smartphone  accelerometer.
 
-tBodyGyroJerkMag.mean -Mean body angular jerk  magnitude signal from the smartphone  accelerometer.
+tBodyGyroJerkMag.mean   -Mean body angular jerk  magnitude signal from the smartphone  accelerometer.
 
-fBodyAcc.mean.X     -Mean frequency of body acceleration signal from the smartphone accelerometer X axis in standard 
-                    gravity units 'g'.  The same description applies for the fBodyAcc.mean.Y and 
-                    fBodyAcc.mean.Z for the Y and Z axis.              
-fBodyAcc.meanFreq.X -Mean frequency of body acceleration signal from the smartphone accelerometer X axis in standard 
-                    gravity units 'g'.  The same description applies for the fBodyAcc.mean.Y and 
-                    fBodyAcc.mean.Z for the Y and Z axis.
-fBodyAccJerk.mean.X 
-            
- "fBodyAccJerk.meanFreq.X"  
-    "fBodyGyro.mean.X"         
-    "fBodyGyro.meanFreq.X"       
-  "fBodyAccMag.mean"          "fBodyAccMag.meanFreq"      "fBodyAccJerkMag.mean"      "fBodyAccJerkMag.meanFreq"  "fBodyGyroMag.mean"         "fBodyGyroMag.meanFreq"     "fBodyGyroJerkMag.mean"     "fBodyGyroJerkMag.meanFreq"
+fBodyAcc.mean.X         -Mean frequency of body acceleration signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the fBodyAcc.mean.Y and 
+                        fBodyAcc.mean.Z for the Y and Z axis.    
+                        
+fBodyAcc.meanFreq.X     -Mean frequency of body acceleration signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the fBodyAcc.mean.Y and 
+                        fBodyAcc.mean.Z for the Y and Z axis.
+                        
+fBodyAccJerk.mean.X     -Mean frequency of body acceleration jerk signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the fBodyAccJerk.mean.Y and 
+                        fBodyAccJerk.mean.Z for the Y and Z axis.
+                        
+fBodyAccJerk.meanFreq.X -Mean of the mean frequency of body acceleration jerk signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the fBodyAccJerk.meanFreq.Y and 
+                        fBodyAccJerk.meanFreq.Z for the Y and Z axis.
+                        
+fBodyGyro.mean.X        -Mean frequency of body angular signal from the smartphone accelerometer X axis in standard 
+                        gravity units 'g'.  The same description applies for the fBodyGyro.mean.Y and 
+                        fBodyGyro.mean.Z for the Y and Z axis.     
+                        
+fBodyAccMag.mean        -Mean frequency body acceleration magnitude signal from the smartphone  accelerometer.
 
+fGravityAccMag.mean     -Mean frequency gravity acceleration magnitude signal from the smartphone  accelerometer.
+
+fBodyAccJerkMag.mean    -Mean frequency body acceleration jerk magnitude signal from the smartphone  accelerometer.
+
+fBodyGyroMag.mean       -Mean frequency body angular  magnitude signal from the smartphone  accelerometer.
+
+
+
+ 
 
 
 't' or 'f' = time or frequency domain
