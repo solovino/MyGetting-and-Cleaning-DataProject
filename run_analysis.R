@@ -1,4 +1,4 @@
-###### STEP 1: Enter the data
+###### STEP 1: Read in the test/training data and labels, as well as the features
 
 ### training data
 # x
@@ -24,7 +24,8 @@ dim(testy)
 feats = read.table("features.txt", header=F)  # Read in all features (column names)
 #names(feats)
 
-###### STEP 2: Add column and row names to the datasets
+###### STEP 2: Add column and row names to the test/training data and combine the data
+######	       to create a working dataset
 
 ###  colnames added to dataframe 
 colnames(testx) <- feats[,2]
@@ -39,7 +40,8 @@ alldataA <-rbind(testx, trainx) # merge the dataframes
 dim(alldataA )
 rownames(alldataA )
 
-###### STEP 3: Extract the measurements that correspond to the mean and standard deviation
+###### STEP 3: Indentify the measurements that correspond to the mean and standard deviation, 
+######		and extract them from working dataset to create a new working dataset
 
 ### look for cases where "mean" appears 
 mean.index <- grep("mean", colnames(alldataA))
@@ -51,7 +53,7 @@ sd.index <- grep("std", colnames(alldataA))
 mean.std.measA <- alldataA[, c(mean.index, sd.index)]
 names(mean.std.measA )
 
-###### STEP 4: Add the labels to the dataset adn read in the activity_labels
+###### STEP 4: Add the "labels" to the dataset and read in the activity_labels, and start using the dplyr library to add the "labels" variables.
 
 ###  use dplyr to better handel the data
 library(dplyr) 
@@ -68,7 +70,7 @@ mean.std.measC <-mutate(mean.std.measB, labels = alllabels)
 actlabels = read.table("activity_labels.txt", header=F)   
 names(actlabels) <- c("LabelID", "LabelName")
 
-###### STEP 5: Add a variable that contains the activity names to the dataset and remove labels
+###### STEP 5: Add a variable that contains the activity names to the working dataset and remove labels from the working dataset
 
 ###  create an empty list to hold the type of activity name, where
 ###  each list element corresponds to the type of activity
@@ -131,12 +133,12 @@ clean.up.column.names<-function(v){
 
 colnames(mean.std.measG) <- clean.up.column.names(colnames(mean.std.measG))
 
-###### STEP 7: group data by activity name, then subject
+###### STEP 8: Group data by activity name, then subject
 
 ### group data by activity name, then subject
 databy.act.sub <- group_by(mean.std.measG, ActivityNames, subject )
 
-###### STEP 8: compute average of each variable for each activity and each subject
+###### STEP 9: Define the final dataset that computes the average of each variable for each activity and each subject
 
 ### compute average of each variable for each activity and each subject.
 # define a new mean to handel missing values within summarise
