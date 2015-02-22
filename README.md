@@ -40,7 +40,7 @@ STEP 8: group data by activity name, then subject
 STEP 9: Define the final dataset that computes the average of each variable for each activity and each subject
   
 
-2. Codebook       -- The codebook for the dataset
+2.  Codebook       -- The codebook for the dataset
  
 
 
