@@ -39,7 +39,7 @@ STEP 8: group data by activity name, then subject
 
 STEP 9: Define the final dataset that computes the average of each variable for each activity and each subject
 
-The tidy dataset is a "grouped_df" object named tidy.mean.std.
+For more specific details, please see the comments in run_analysis.R.  The tidy dataset is a "grouped_df" object named tidy.mean.std.
 
 
 File 2.  Codebook.txt       -- The codebook for the dataset
