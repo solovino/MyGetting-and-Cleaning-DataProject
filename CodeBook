@@ -1,13 +1,14 @@
+Sourcing the file run_analysis.R will provide a dataframe called mean.std.measH.  This dataset provides  
+average and standard deviation of each activity when grouped by activity and each subject. The dataset 
+has 180 row and 81 columns.  Unless otherwise, the variables are numerical.  More details about the 
+original data can be found in the "Human Activity Recognition Using Smartphones Dataset" README.txt file
 
-Information about the variables (including units!) in the data set not contained in the tidy data
-    Information about the summary choices you made
-    Information about the experimental study design you used
+This dataset has the following variables:
 
-This dataset provides  average and standard deviation of each activity when grouped by activity and each subject. 
-The dataset has 180 row and 81 columns.  It has the following variables:
+ActivityNames           -Activity done by subject.  A categorical variable.
 
-ActivityNames -- activity done by subject
-subject -- Subject that performed the activity
+subject                 -Subject that performed the activity.  A categorical variable.
+
 tBodyAcc.mean.X         -Mean time body acceleration signal from the smartphone accelerometer X axis in standard 
                         gravity units 'g'.  The same description applies for the tBodyAcc.mean.Y and 
                         tBodyAcc.mean.Z for the Y and Z axis. 
@@ -66,12 +67,44 @@ fBodyAccJerkMag.mean    -Mean frequency body acceleration jerk magnitude signal 
 
 fBodyGyroMag.mean       -Mean frequency body angular  magnitude signal from the smartphone  accelerometer.
 
+fBodyGyroMag.meanFreq   -Mean of the mean frequency body angular  magnitude signal from the smartphone  accelerometer.
 
+fBodyGyroJerkMag.mean   -Mean frequency body angular  magnitude jerk signal from the smartphone  accelerometer.
 
+fBodyGyroJerkMag.meanFreq -Mean of the mean frequency body angular  magnitude jerk signal from the smartphone  accelerometer.
+
+tBodyAcc.std.X          -Same as tBodyAcc.mean.X, but provides the standard deviation instead of the mean.  
+
+tGravityAcc.std.X       -Same as tGravityAcc.mean.X, but provides the standard deviation instead of the mean.   
+
+tBodyAccJerk.std.X      -Same as tBodyAccJerk.mean.X, but provides the standard deviation instead of the mean.   
+      
+tBodyGyro.std.X         -Same as tBodyGyro.mean.X, but provides the standard deviation instead of the mean.   
+      
+tBodyGyroJerk.std.X     -Same as tBodyGyroJerk.mean.X, but provides the standard deviation instead of the mean. 
+   
+tBodyAccMag.std         -Same as tBodyAccMag.mean, but provides the standard deviation instead of the mean. 
+            
+tGravityAccMag.std      -Same as tGravityAccMag.mean, but provides the standard deviation instead of the mean. 
+
+tBodyAccJerkMag.std     -Same as tBodyAccJerkMag.mean, but provides the standard deviation instead of the mean. 
+
+tBodyGyroMag.std        -Same as tBodyGyroMag.mean, but provides the standard deviation instead of the mean. 
+
+tBodyGyroJerkMag.std    -Same as tBodyGyroJerkMag.mean, but provides the standard deviation instead of the mean. 
+
+fBodyAcc.std.X          -Same as fBodyAcc.mean.X, but provides the standard deviation instead of the mean. 
+  
+fBodyAccJerk.std.X      -Same as fBodyAccJerk.mean.X, but provides the standard deviation instead of the mean. 
  
+fBodyGyro.std.X         -Same as fBodyGyro.mean.X, but provides the standard deviation instead of the mean. 
 
+fBodyAccMag.std.X       -Same as fBodyAccMag.mean.X, but provides the standard deviation instead of the mean. 
 
-'t' or 'f' = time or frequency domain
-'Body' or 'Gravity' - Indicating body or gravity acceleration.
+fBodyAccJerkMag.std.X   -Same as fBodyAccJerkMag.mean.X, but provides the standard deviation instead of the mean. 
 
+fBodyGyroMag.std.X      -Same as fBodyGyroMag.mean.X, but provides the standard deviation instead of the mean. 
 
+fBodyGyroJerkMag.std.X   -Same as fBodyGyroJerkMag.mean.X, but provides the standard deviation instead of the mean. 
+ 
+  
