@@ -138,7 +138,7 @@ colnames(mean.std.measG) <- clean.up.column.names(colnames(mean.std.measG))
 ### group data by activity name, then subject
 databy.act.sub <- group_by(mean.std.measG, ActivityNames, subject )
 
-###### STEP 9: Define the final dataset that computes the average of each variable for each activity and each subject
+###### STEP 10: Define the final dataset that computes the average of each variable for each activity and each subject
 
 ### compute average of each variable for each activity and each subject.
 # define a new mean to handel missing values within summarise
