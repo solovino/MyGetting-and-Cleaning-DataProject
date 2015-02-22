@@ -1,4 +1,4 @@
-Sourcing the file run_analysis.R will provide a dataframe called mean.std.measH.  This dataset provides  
+Sourcing the file run_analysis.R will provide a dataframe called tidy.mean.std.  This dataset provides  
 average and standard deviation of each activity when grouped by activity and each subject. The dataset 
 has 180 row and 81 columns.  Unless otherwise, the variables are numerical.  More details about the 
 original data can be found in the "Human Activity Recognition Using Smartphones Dataset" README.txt file
